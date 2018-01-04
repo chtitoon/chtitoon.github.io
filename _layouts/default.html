@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>chtitoon.net</title>
+  <!-- Meta -->
+  <meta name="keywords" content="blog" />
+  <meta name="author" content="Antoine Courbot" />
+  <meta name="robots" content="index, follow" />
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width" />
+  <!-- Facebook Meta -->
+  <meta property="og:title" content="Chtitoon"/>
+  <meta property="og:description" content="Hi, I am Antoine Courbot, I am a software engineer. This blog is my way to express opinions, feelings about things I want to talk."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="http://chtitoon.net/"/>
+  <meta property="og:site_name" content="chtitoon"/>
+  <link href='http://fonts.googleapis.com/css?family=Alike' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="/assets/css/default.css" />
+  <link rel="stylesheet" type="text/css" media="only screen and (max-width: 480px), only screen and (max-device-width: 480px)" href="/assets/css/default-device.css" />
+  <link rel="stylesheet" type="text/css" media="only screen and (-webkit-min-device-pixel-ratio: 2)" href="/assets/css/default-retina.css"/>
+  
+  <!--[if lt IE 9]>
+  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <header id="who-h">
+    <img id="who-img" src="/assets/img/me.png" width="120" height="120" alt="AC"/>
+    <h1 id="who-h1">Antoine Courbot</h1>
+    <h2 id="who-h2">Software Engineer</h2>
+  </header>
+  <ul id="posts-l">
+    <li id="posts-l-o"></li>
+    {% for post in site.posts  %}
+    <li class="post-i">
+      <a class="post-i-lnk" href="{{post.url}}">{{post.title}}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</body>
+</html>

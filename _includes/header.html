@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{page.title}}</title>
+  
+  <meta name="description" content="Hi, I am Antoine Courbot, I am a software engineer. This blog is my way to express opinions, feelings about things I want to talk." />
+  <meta name="keywords" content="blog" />
+  <meta name="author" content="Antoine Courbot" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="{{page.title}}"/>
+  <meta property="og:description" content="{{page.shortDesc}}"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="http://chtitoon.net/{{page.url}}"/>
+  <meta property="og:site_name" content="chtitoon"/>
+  
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width" />
+  
+  <link href='http://fonts.googleapis.com/css?family=Alike' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="/assets/css/default.css" />
+  <link rel="stylesheet" type="text/css" media="only screen and (max-width: 480px), only screen and (max-device-width: 480px)" href="/assets/css/default-device.css" />
+  <link rel="stylesheet" type="text/css" media="only screen and (-webkit-min-device-pixel-ratio: 2)" href="/assets/css/default-retina.css"/>
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+</head>
+<section id="header">
+  <img id="header-img" src="/assets/img/me.png" width="60" height="60"/>
+  <div id="header-me">
+    <h1 id="header-me-name">Antoine Courbot</h1>
+    <p id="header-me-about">
+      French Software Engineer.
+    </p>
+  </div>
+  <ul id="header-social-networks">
+    <li class="header-social-network"><a id="header-social-network-linkedin" href="http://www.linkedin.com/in/antoinecourbot" target="_blank">LinkedIn</a></li>
+    <li class="header-social-network"><a id="header-social-network-twitter" href="http://www.twitter.com/chtitoon" target="_blank">Twitter</a></li>
+  </ul>
+</section>
+<section id="blog">
+  <a id="blog-header" href="/">Blog</a>
+</section>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>

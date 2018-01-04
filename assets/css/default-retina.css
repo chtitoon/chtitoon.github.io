@@ -1,0 +1,14 @@
+#header-social-network-twitter {
+  background-image: url("../img/twitter@2x.png");
+  background-size:24px;
+}
+
+#header-social-network-linkedin {
+  background-image: url("../img/linkedin@2x.png");
+  background-size:24px;
+}
+
+.blog-post-link {
+  background-image: url("../img/link@2x.png");
+  background-size:16px;
+}
