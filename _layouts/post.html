@@ -12,14 +12,14 @@
   <meta property="og:title" content="{{page.title}}"/>
   <meta property="og:description" content="{{content | strip_html | truncatewords:30}}"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:url" content="http://chtitoon.net/{{page.url}}"/>
+  <meta property="og:url" content="http://chtitoon.github.io/{{page.url}}"/>
   <meta property="og:site_name" content="chtitoon"/>
-  {% if page.headerimg %}<meta property="og:image" content="http://chtitoon.net{{page.headerimg}}"/>{% endif %}
-  <link href='http://fonts.googleapis.com/css?family=Alike' rel='stylesheet' type='text/css'>
+  {% if page.headerimg %}<meta property="og:image" content="https://chtitoon.github.io{{page.headerimg}}"/>{% endif %}
+  <link href='https://fonts.googleapis.com/css?family=Alike' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="/assets/css/default.css" />
   <link rel="stylesheet" type="text/css" media="only screen and (max-width: 480px), only screen and (max-device-width: 480px)" href="/assets/css/default-device.css" />
   <link rel="stylesheet" type="text/css" media="only screen and (-webkit-min-device-pixel-ratio: 2)" href="/assets/css/default-retina.css"/>
-  
+
   <!--[if lt IE 9]>
   <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -49,16 +49,16 @@
       <script type="text/javascript">
       /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
       var disqus_shortname = 'chtitoon'; // required: replace example with your forum shortname
-      
+
       /* * * DON'T EDIT BELOW THIS LINE * * */
       (function() {
           var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-          dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+          dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
           (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
       })();
       </script>
-      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-      <a href="http://disqus.com" class="dsq-brlink">Powered by <span class="logo-disqus">Disqus</span></a>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      <a href="https://disqus.com" class="dsq-brlink">Powered by <span class="logo-disqus">Disqus</span></a>
     </section>
   </section>
   <script>
@@ -72,17 +72,17 @@
   </script>
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
   <script type="text/javascript">
-  
+
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-36403425-1']);
     _gaq.push(['_trackPageview']);
-  
+
     (function() {
       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
-  
+
   </script>
   <script type="text/javascript">
     $(function() {
@@ -130,7 +130,7 @@
     	        return (~~ (number % 100 / 10) === 1) ? 'er' : 'ème';
     	    }
     	});
-    	
+
     	var dateStr = $("#post-d").html();
     	var date = moment(dateStr, "YYYY-MM-DD");
     	date.lang('fr');
